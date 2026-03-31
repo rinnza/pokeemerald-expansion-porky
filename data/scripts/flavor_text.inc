@@ -127,7 +127,7 @@ Text_ATownMap::
 
 Text_PokeMartShelf::
 	.string "Wow!\n"
-	.string "Tons of POKéMON stuff!$"
+	.string "Tons of HamScoff merch!$"
 
 Text_DishesPlatesNeatlyLinedUp::
 	.string "Dishes and plates are neatly\n"
@@ -142,11 +142,12 @@ Text_Dresser::
 	.string "It will hold a lot of stuff.$"
 
 Text_Snacks::
-	.string "There's a pile of snacks here.$"
+	.string "There's a pile of snacks here.\n"
+	.string "Yummers.$"
 
 Text_PokemartSign::
 	.string "All your item needs fulfilled!\n"
-	.string "POKéMON MART$"
+	.string "SCOFF MART$"
 
 Text_PokecenterSign::
 	.string "Heal Your POKéMON!\n"
@@ -154,7 +155,7 @@ Text_PokecenterSign::
 
 Text_Indigo_UltimateGoal::
 	.string "INDIGO PLATEAU\p"
-	.string "The ultimate goal of TRAINERS!\n"
+	.string "Under new management.\n"
 	.string "POKéMON LEAGUE HQ$"
 
 Text_Indigo_HighestAuthority::
@@ -180,7 +181,7 @@ Text_PowerPlantMachine::
 
 Text_Telephone::
 	.string "It's a telephone.\n"
-	.string "Better not use it.$"
+	.string "Just use your Pokegear!$"
 
 Text_Computer::
 	.string "It's all complicated words and\n"
@@ -188,7 +189,7 @@ Text_Computer::
 
 Text_AdvertisingPoster::
 	.string "It's an advertising poster about\n"
-	.string "all kinds of products.$"
+	.string "all kinds of Scoff products.$"
 
 Text_TastyFood::
 	.string "Oh, that smells tasty!\n"
@@ -224,7 +225,7 @@ Text_ImpressiveMachine::
 	.string "It sure is impressive.$"
 
 Text_VideoGame::
-	.string "It's the latest video game!\n"
+	.string "It's the latest Scoff Betting!\n"
 	.string "It sure looks fun!$"
 
 Text_Burglary::
