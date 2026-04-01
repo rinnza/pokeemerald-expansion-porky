@@ -10,6 +10,7 @@
 #include "palette.h"
 #include "pokedex.h"
 #include "pokemon.h"
+#include "random.h"
 #include "scanline_effect.h"
 #include "sound.h"
 #include "sprite.h"
@@ -507,7 +508,7 @@ static void CB2_StarterChoose(void)
     BuildOamBuffer();
     DoScheduledBgTilemapCopiesToVram();
     UpdatePaletteFade();
-    RandomizeStarters()
+    RandomizeStarters();
 }
 
 static void Task_StarterChoose(u8 taskId)
