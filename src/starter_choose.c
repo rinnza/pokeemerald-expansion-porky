@@ -415,6 +415,8 @@ void CB2_ChooseStarter(void)
     u8 taskId;
     u8 spriteId;
 
+    RandomizeStarters();
+
     SetVBlankCallback(NULL);
 
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
@@ -508,7 +510,6 @@ static void CB2_StarterChoose(void)
     BuildOamBuffer();
     DoScheduledBgTilemapCopiesToVram();
     UpdatePaletteFade();
-    RandomizeStarters();
 }
 
 static void Task_StarterChoose(u8 taskId)
