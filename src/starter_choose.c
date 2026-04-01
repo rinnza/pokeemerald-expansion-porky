@@ -110,16 +110,55 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
     {8, 4},
 };
 
-#define GRASS_STARTER (IS_FRLG ? SPECIES_BULBASAUR  : SPECIES_TREECKO)
-#define FIRE_STARTER  (IS_FRLG ? SPECIES_CHARMANDER : SPECIES_TORCHIC)
-#define WATER_STARTER (IS_FRLG ? SPECIES_SQUIRTLE   : SPECIES_MUDKIP )
-
-static const u16 sStarterMon[STARTER_MON_COUNT] =
+// Starter pools
+static const u16 sGrassStarterPool[] =
 {
-    GRASS_STARTER,
-    FIRE_STARTER,
-    WATER_STARTER,
+    SPECIES_BULBASAUR,
+    SPECIES_CHIKORITA,
+    SPECIES_TREECKO,
+    SPECIES_TURTWIG,
+    SPECIES_SNIVY,
+    SPECIES_CHESPIN,
+    SPECIES_ROWLET,
+    SPECIES_GROOKEY,
+    SPECIES_SPRIGATITO,
 };
+
+static const u16 sFireStarterPool[] =
+{
+    SPECIES_CHARMANDER,
+    SPECIES_CYNDAQUIL,
+    SPECIES_TORCHIC,
+    SPECIES_CHIMCHAR,
+    SPECIES_TEPIG,
+    SPECIES_FENNEKIN,
+    SPECIES_LITTEN,
+    SPECIES_SCORBUNNY,
+    SPECIES_FUECOCO,
+};
+
+static const u16 sWaterStarterPool[] =
+{
+    SPECIES_SQUIRTLE,
+    SPECIES_TOTODILE,
+    SPECIES_MUDKIP,
+    SPECIES_PIPLUP,
+    SPECIES_OSHAWOTT,
+    SPECIES_FROAKIE,
+    SPECIES_POPPLIO,
+    SPECIES_SOBBLE,
+    SPECIES_QUAXLY,
+};
+
+// Actual starters shown in the bag
+static u16 sStarterMon[STARTER_MON_COUNT];
+
+static void RandomizeStarters(void)
+{
+    sStarterMon[0] = sGrassStarterPool[Random() % ARRAY_COUNT(sGrassStarterPool)];
+    sStarterMon[1] = sFireStarterPool[Random() % ARRAY_COUNT(sFireStarterPool)];
+    sStarterMon[2] = sWaterStarterPool[Random() % ARRAY_COUNT(sWaterStarterPool)];
+}
 
 static const struct BgTemplate sBgTemplates[3] =
 {
@@ -468,6 +507,7 @@ static void CB2_StarterChoose(void)
     BuildOamBuffer();
     DoScheduledBgTilemapCopiesToVram();
     UpdatePaletteFade();
+    RandomizeStarters()
 }
 
 static void Task_StarterChoose(u8 taskId)
