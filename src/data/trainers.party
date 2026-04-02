@@ -4808,7 +4808,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rapid Spin  
 
 Numel (M)  
-Ability: Simple 
+Ability: Simple  
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe  
 - Magnitude  
@@ -4819,7 +4819,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Golett @ Passho Berry  
 Ability: Iron Fist  
 Level: 15
-Impish Nature
+Impish Nature  
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe  
 - Astonish  
 - Self-Destruct  
