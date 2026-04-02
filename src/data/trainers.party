@@ -4798,36 +4798,29 @@ Items: Potion / Potion
 Double Battle: No
 AI: Basic Trainer
 
-Baltoy  
-Ability: Levitate  
-Level: 12  
-Tera Type: Ground  
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe  
-- Mud-Slap  
-- Endure  
-- Confusion  
-- Rapid Spin  
+Geodude
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Defense Curl
+- Rock Throw
+- Rock Tomb
 
-Numel (M)  
-Ability: Simple  
-Level: 12  
-Tera Type: Fire  
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe  
-- Magnitude  
-- Defense Curl  
-- Ember  
-- Rollout  
+Geodude
+Level: 12
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Defense Curl
+- Rock Throw
+- Rock Tomb
 
-Golett @ Passho Berry  
-Ability: Iron Fist  
-Level: 15  
-Tera Type: Ground  
-Impish Nature  
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe  
-- Astonish  
-- Self-Destruct  
-- Magnitude  
-- Power-Up Punch  
+Nosepass @ Oran Berry
+Level: 15
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Block
+- Harden
+- Tackle
+- Rock Tomb
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
